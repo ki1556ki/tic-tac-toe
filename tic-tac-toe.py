@@ -6,14 +6,14 @@ def checked(i) :
 
       if button["text"] != "     " :
             return
-      button["text"] = player 
+      button["text"] = player
       button["bg"] = "yellow"
 
       if player == "X" :
-            player = "O"
+            player = "X"
             button["bg"] = "yellow"
       else :
-            player = "X"
+            player = "O"
             button["bg"] = "lightgreen"
 
 window = Tk()
@@ -26,5 +26,3 @@ for i in range(9) :
       list.append(b)
 
 window.mainloop()
-
-
